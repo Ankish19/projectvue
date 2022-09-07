@@ -1,6 +1,8 @@
 <!--** View Section **-->
 <template>
-  <router-view />
+  <div>
+    <h1>this is product details page</h1>
+  </div>
 </template>
 
 <!--** Logic Section **-->
@@ -9,13 +11,15 @@
 
 export default {
   //  My Route  //
-  name: "App",
+  name: "ProductDetailsInfo",
 
   //  Components  //
   components: {},
-
+  props: ["displayItem"],
   //  Init  //
-  mounted() {},
+  mounted() {
+    console.log(this.displayItem, "hello world");
+  },
 
   //  Variables  //
   data() {
