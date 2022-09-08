@@ -1,35 +1,19 @@
-<!--** View Section **-->
 <template>
   <div>
-    <h1>this is product details page</h1>
+    <h1>Product Details Page info</h1>
   </div>
 </template>
 
-<!--** Logic Section **-->
 <script>
-//  Import Section  //
-
-export default {
-  //  My Route  //
-  name: "ProductDetailsInfo",
-
-  //  Components  //
-  components: {},
-  props: ["displayItem"],
-  //  Init  //
-  mounted() {
-    console.log(this.displayItem, "hello world");
-  },
-
-  //  Variables  //
-  data() {
-    return {};
-  },
-
-  //  Functions  //
-  methods: {},
-};
+  export default {
+    name: 'ProductDetailsInfo',
+    // props: ['items'],
+    mounted() {
+      console.log(this.$route.params.items)
+    }
+  }
 </script>
 
-<!--** Style Section **-->
-<style lang="scss" scoped></style>
+<style scoped>
+
+</style>

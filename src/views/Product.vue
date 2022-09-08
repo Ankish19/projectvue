@@ -1,18 +1,16 @@
 <!--** View Section **-->
 <template>
   <div id="Product">
-    <Header />
     <ProductDetalis />
     <!-- <About /> -->
-    <Footer />
   </div>
 </template>
 
 <!--** Logic Section **-->
 <script>
 //  Import Section  //
-import Header from "@/views/layouts/Header.vue";
-import Footer from "@/views/layouts/Footer.vue";
+// import Header from "@/views/layouts/Header.vue";
+// import Footer from "@/views/layouts/Footer.vue";
 import ProductDetalis from "@/components/ProductDetalis.vue";
 // import About from "@/views/About.vue";
 export default {
@@ -21,8 +19,8 @@ export default {
 
   //  Components  //
   components: {
-    Header,
-    Footer,
+    // Header,
+    // Footer,
     ProductDetalis,
     // About,
   },
